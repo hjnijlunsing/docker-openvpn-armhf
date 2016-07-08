@@ -1,19 +1,8 @@
 # OpenVPN for Docker
 
-[![Build Status](https://travis-ci.org/kylemanna/docker-openvpn.svg)](https://travis-ci.org/kylemanna/docker-openvpn)
-[![Docker Stars](https://img.shields.io/docker/stars/nijlunsing/openvpn-armhf.svg)](https://hub.docker.com/r/nijlunsing/openvpn-armhf/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/nijlunsing/openvpn-armhf.svg)](https://hub.docker.com/r/nijlunsing/openvpn-armhf/)
-[![ImageLayers](https://imagelayers.io/badge/nijlunsing/openvpn-armhf:latest.svg)](https://hub.docker.com/r/nijlunsing/openvpn-armhf/)
-
-
 OpenVPN ARM server in a Docker container complete with an EasyRSA PKI CA.
 
 Tested on Cubox I4 Pro and 99.99% based on the work of kylemanna
-
-#### Upstream Links
-
-* Docker Registry @ [nijlunsing/openvpn-armhf](https://hub.docker.com/r/nijlunsing/openvpn-armhf/)
-* GitHub @ [kylemanna/docker-openvpn](https://github.com/kylemanna/docker-openvpn)
 
 
 ## Quick Start
