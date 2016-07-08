@@ -165,7 +165,7 @@ of a guarantee in the future.
 
 ## Differences from kylemanna/dockvpn
 
-* Uses nijlunsing/alpine-armhf as base image
+* Uses nijlunsing/alpine-armhf as base image, based on the work of Lalyos (https://gist.github.com/lalyos/e9004a76aea6a0681ed6)
 * Changed readme to use hypriot/armhf-busybox instead of busybox
 
 ## Tested On
