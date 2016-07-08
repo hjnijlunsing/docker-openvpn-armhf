@@ -2,7 +2,7 @@
 
 OpenVPN ARM server in a Docker container complete with an EasyRSA PKI CA.
 
-Tested on Cubox I4 Pro and 99.99% based on the work of kylemanna
+Tested on Cubox I4 Pro and 99.99% based on the work of kylemanna/docker-openvpn
 
 
 ## Quick Start
