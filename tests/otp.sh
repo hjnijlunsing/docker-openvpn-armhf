@@ -2,7 +2,7 @@
 set -ex
 OVPN_DATA=basic-data-otp
 CLIENT=travis-client
-IMG=kylemanna/openvpn
+IMG=nijlunsing/openvpn-armhf
 OTP_USER=otp
 # Function to fail
 abort() { cat <<< "$@" 1>&2; exit 1; }
@@ -10,7 +10,7 @@ abort() { cat <<< "$@" 1>&2; exit 1; }
 #
 # Create a docker container with the config data
 #
-docker run --name $OVPN_DATA -v /etc/openvpn busybox
+docker run --name $OVPN_DATA -v /etc/openvpn hypriot/armhf-busybox
 
 ip addr ls
 SERV_IP=$(ip -4 -o addr show scope global  | awk '{print $4}' | sed -e 's:/.*::' | head -n1)

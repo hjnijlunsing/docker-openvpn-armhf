@@ -2,7 +2,7 @@
 
 set -ex
 
-IMG=${IMG:-kylemanna/openvpn}
+IMG=${IMG:-nijlunsing/openvpn-armhf}
 
 temp=$(mktemp -d)
 

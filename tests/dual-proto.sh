@@ -4,12 +4,12 @@ set -ex
 OVPN_DATA=dual-data
 CLIENT_UDP=travis-client
 CLIENT_TCP=travis-client-tcp
-IMG=kylemanna/openvpn
+IMG=nijlunsing/openvpn-armhf
 
 #
 # Create a docker container with the config data
 #
-docker run --name $OVPN_DATA -v /etc/openvpn busybox
+docker run --name $OVPN_DATA -v /etc/openvpn hypriot/armhf-busybox
 
 ip addr ls
 SERV_IP=$(ip -4 -o addr show scope global  | awk '{print $4}' | sed -e 's:/.*::' | head -n1)

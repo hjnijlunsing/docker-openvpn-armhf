@@ -2,7 +2,7 @@
 
 OVPN_DATA=opvn-data
 
-IMG=kylemanna/openvpn
+IMG=nijlunsing/openvpn-armhf
 
 # Function to fail
 abort() { cat <<< "$@" 1>&2; exit 1; }
@@ -10,7 +10,7 @@ abort() { cat <<< "$@" 1>&2; exit 1; }
 #
 # Create a docker container with the config data
 #
-sudo docker run --name $OVPN_DATA -v /etc/openvpn busybox
+sudo docker run --name $OVPN_DATA -v /etc/openvpn hypriot/armhf-busybox
 
 #
 # Generate openvpn.config file
