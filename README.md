@@ -15,9 +15,6 @@ Tested on Cubox I4 Pro and 99.99% based on the work of kylemanna
 * Docker Registry @ [nijlunsing/openvpn-armhf](https://hub.docker.com/r/nijlunsing/openvpn-armhf/)
 * GitHub @ [kylemanna/docker-openvpn](https://github.com/kylemanna/docker-openvpn)
 
-#### Example Service
-
-* [backroad.io](http://beta.backroad.io?utm_source=nijlunsing/openvpn-armhf&utm_medium=readme&utm_campaign=20150621) - powered by *nijlunsing/openvpn-armhf*
 
 ## Quick Start
 
