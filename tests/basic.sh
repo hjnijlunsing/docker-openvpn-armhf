@@ -7,6 +7,7 @@ IMG=nijlunsing/openvpn-armhf
 #
 # Create a docker container with the config data
 #
+docker rm $OVPN_DATA
 docker run --name $OVPN_DATA -v /etc/openvpn hypriot/armhf-busybox
 
 ip addr ls
