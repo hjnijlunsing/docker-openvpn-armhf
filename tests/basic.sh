@@ -7,6 +7,15 @@ IMG=nijlunsing/openvpn-armhf
 #
 # Create a docker container with the config data
 #
+ 
+RUNNING=$(docker inspect --format="{{ .State.Running }}" $OVPN_DATA 2> /dev/null)
+
+if [ $? -eq 1 ]; then
+  echo "'$OVPN_DATA' does not exist."
+else
+  /usr/bin/docker rm --force OVPN_DATA
+fi
+
 docker rm $OVPN_DATA
 docker run --name $OVPN_DATA -v /etc/openvpn hypriot/armhf-busybox
 
